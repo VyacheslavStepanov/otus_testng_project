@@ -10,6 +10,7 @@ public class EditorTest {
         Assert.assertEquals(editor.CleanOutput("Password: enter password"), "enter password");
         Assert.assertEquals(editor.CleanOutput("enter password.Password: "), "enter password.");
         Assert.assertEquals(editor.CleanOutput("Password:enter password"), "Password:enter password");
+        Assert.assertNotEquals(editor.CleanOutput("Password: enter password"), "");
     }
     @Test
     public void TestIsStringContainsSpaces(){

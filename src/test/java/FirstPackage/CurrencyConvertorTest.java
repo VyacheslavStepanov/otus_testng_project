@@ -12,5 +12,6 @@ public class CurrencyConvertorTest {
         Assert.assertEquals(CurrencyConvertor.Convert(0, Currency.USD, Currency.RUB), 0);
         Assert.assertEquals(CurrencyConvertor.Convert(10, Currency.USD, Currency.RUB), 0.17);
         Assert.assertEquals(CurrencyConvertor.Convert(-10, Currency.USD, Currency.RUB), -0.17);
+        Assert.assertNotEquals(CurrencyConvertor.Convert(20, Currency.USD, Currency.RUB), 0);
     }
 }
